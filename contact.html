@@ -1,0 +1,144 @@
+<html>
+  <head>
+    <title>Midterm Project</title>
+    <meta name="Jean Rae" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--font google--------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/e391ce7786.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="sub-history">
+      <nav>
+        <a href="index.html"><img src="img/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="history.html">History</a></li>
+            <!-- <li><a href="#">Quick Facts</a></li> -->
+            <li><a href="tourist-spots.html">Tourist Spots</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <!-- Contact Us ------------------------->
+    <section class="location">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15612.356982672116!2d121.91019163621174!3d11.968322705627115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53d25c5975257%3A0x528e1abf42332021!2sBoracay%20Island!5e0!3m2!1sen!2sph!4v1635824976354!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <section class="contact-us">
+
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>Aklan West Rd Boracay, 5608</h5>
+              <p>Boracay Island, Malay, Aklan</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+63 917 566 5811</h5>
+              <p>Busy central area with palm-backed White Beach, plus water sports, souvenir shops & late-night bars.</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>bliss@twoseasonsresorts.com</h5>
+              <p>Email us your query</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+
+          <form action="form-handler.php" method="post">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="email" name="email" placeholder="Enter email address" required>
+            <input type="text" name="subject" placeholder="Enter subject" required>
+            <textarea rows="8" name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="email-btn  red-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Information ------------->
+    <!-- <section class="ct-info">
+      <h1>For more Information, please contact us on any <br />of our social media platforms.</h1>
+      <a href="#" class="contact-btn">Contact Us</a>
+      <div class="icons">
+      <a href="https://web.facebook.com/Aklan-Province-147121778737722/?_rdc=1&_rdr" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/aklanpgo" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.instagram.com/aklan_province/" target="_blank"><i class="fa fa-instagram"></i></a>
+    </section> -->
+
+    <!-- Footer------------->
+    <footer class="footer">
+      <div class="container">
+        <div class="rows">
+          <div class="footer-col">
+            <h4>About Aklan</h4>
+            <ul>
+              <li><a href="#">How to Book</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get Help</h4>
+            <ul>
+              <li><a href="#">Flights</a></li>
+              <li><a href="#">Hotels</a></li>
+              <li><a href="#">Flight + Hotel</a></li>
+              <li><a href="#">Yacht Rental</a></li>
+              <li><a href="#">Villas</a></li>
+              <li><a href="#">Apartments</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Other</h4>
+            <ul>
+              <li><a href="#">#ExplorePH</a></li>
+              <li><a href="#">Aklan.gov</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+                <a href="https://web.facebook.com/Aklan-Province-147121778737722/?_rdc=1&_rdr" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/aklanpgo" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/aklan_province/" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--JavaScript for Mobile Web Menu--------------------------------------->
+    <script class="contact-info">
+      var navLinks = document.getElementById("navLinks");
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+
+</html>

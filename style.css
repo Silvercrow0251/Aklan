@@ -1,0 +1,533 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Inconsolata', monospace; */
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("img/shifaaz-shamoon-Rl9l9mL6Pvs-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img{
+  width: 100px;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+.text-box{
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.text-box h1{
+  font-size: 90px;
+}
+.text-box p{
+  margin: 10px 0 40px;
+  font-size: 30px;
+  color: #fff;
+  line-height: 40px;
+}
+.reserve-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 20px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.reserve-btn:hover{
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+}
+nav .fa{
+  display: none;
+}
+@media(max-width: 700px){
+  .text-box h1{
+    font-size: 90px;
+  }
+  .nav-links ul li{
+    display: block;
+  }
+  .nav-links{
+    position: fixed;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fa{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul{
+    padding: 30px;
+  }
+}
+/*-------- about --------*/
+.about{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  background-color: #fff;
+}
+h1{
+  font-size: 50px;
+  font-weight: 600;
+}
+p{
+  color: #777;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.about-col{
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.about-col:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+  .row{
+    flex-direction: column;
+  }
+}
+/*-------- history --------*/
+.history{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.history p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+.history-col img{
+  height: 500px;
+  width: 70%;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+/*-------- Scrollbar style --------*/
+::-webkit-scrollbar {
+width: 12px;
+height: 12px;
+}
+
+::-webkit-scrollbar-track {
+border: 1px gray;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+background: gray;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #ff0000;
+}
+/*-------- Quick Facts --------*/
+.facts-row img{
+  width: 2000%;
+  border-radius: 10px;
+  position: relative;
+}
+.facts{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.facts-row{
+  width: 5%;
+}
+.facts-col{
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.facts-col:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+/*-------- Tourist Spots --------*/
+/* .tourist-spots{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.places-col{
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+.places-col img{
+  width: 100%;
+  border-radius: 10px;
+}
+.places-col p{
+  padding: 0;
+  text-align: justify;
+}
+.places-col h3{
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+} */
+/*-------- Tourist Spots-2 --------*/
+/* .tourist-spots-2{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.places-col-2{
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+} */
+/*-------- Contact Information --------*/
+.ct-info{
+  /* margin: 100px auto; */
+  width: 100%;
+  /* background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/shifaaz-shamoon-Rl9l9mL6Pvs-unsplash.jpg"); */
+  background-color: #00242a;
+  background-position: center;
+  background-size: cover;
+  /* border-radius: 10px; */
+  text-align: center;
+  padding: 100px 0;
+  color: #fff;
+}
+.contact-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 20px;
+  margin-top: 30px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.contact-btn:hover{
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+}
+@media(max-width: 700px){
+  .ct-info h1{
+    font-size: 24px;
+  }
+}
+.icons .fa{
+  color: #f44336;
+  margin: 10px 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+/*-------- about us page --------*/
+.sub-header{
+  height: 70vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("img/colton-duke-pit2V7NJ_e4-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+/*-------- history --------*/
+.sub-history{
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("img/colton-duke-pit2V7NJ_e4-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+.sub-history h1{
+  margin-top: 100px;
+}
+@media(max-width: 700px){
+  .sub-history h1{
+  font-size: 40px;;
+  }
+}
+/*-------- tourist spots --------*/
+.options{
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.tourist-spots-col{
+  flex-basis: 90%;
+  padding: 30px 2px;
+}
+.tourist-spots-col img{
+  width: 90%;
+}
+.tourist-spots-col h1{
+  padding-top: 0;
+}
+.tourist-spots-col p{
+  padding: 15px 0 25px;
+  text-align: justify;
+}
+.tourist-spots-col h3{
+  padding: 15px 0 25px;
+  text-align: justify;
+}
+.tourist-spots-col li{
+  font-size: 18px;
+}
+/*-------- footer --------*/
+.container{
+  max-width: 1170px;
+  /* background-color: red; */
+  margin: auto;
+}
+.rows{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #00242a;
+  padding: 70px 0;
+  box-sizing: border-box;
+}
+.footer-col{
+  width: 20%;
+  padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+  /* background-color: red; */
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin: 0 10px 10px 0;
+  /* text-align: center; */
+  align-items: center;
+  justify-content: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.social-links{
+  display: flex;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+@media(max-width: 700px){
+  .footer-col{
+    width: 100%;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  /* .footer{
+    text-align: center;
+  }
+  .footer-col h4::before{
+    text-align: center;
+    width: 50px;
+    left: 44%;
+  }
+  .footer-col .social-links{
+    align-items: center;
+    justify-content: center;
+  } */
+}
+/*-------- contact us page --------*/
+.location{
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+.location iframe{
+  width: 100%;
+}
+.contact-us{
+  width: 80%;
+  margin: auto;
+}
+.contact-col{
+  flex-basis: 48%;
+  margin-bottom: 90px;
+}
+.contact-col div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.contact-col div .fa{
+  font-size: 28px;
+  color: #f44336;
+  margin: 10px;
+  margin-right: 30px;
+}
+.contact-col p{
+  padding: 0;
+}
+.contact-col h5{
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 400px;
+}
+.email-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: red;
+  border: 1px solid red;
+  padding: 12px 34px;
+  font-size: 20px;
+  margin-top: 30px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.email-btn:hover{
+  border: 1px solid #f44336;
+  color: #fff;
+  background: #f44336;
+  transition: 1s;
+}
+.contact-col input, .contact-col textarea{
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
