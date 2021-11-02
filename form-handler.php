@@ -4,7 +4,7 @@ $visitor_email = $_POST['email'];
 $subject= $_POST['subject'];
 $message= $_POST['message'];
 
-$email_from ='info@silvercrow0251.github.io';
+$email_from ='travel-2-aklan.com.ph';
 
 $email_subject ='New Form Submission';
 
