@@ -85,7 +85,7 @@ nav img{
 nav .fa{
   display: none;
 }
-@media(max-width: 480px){
+@media(max-width: 700px){
   .text-box h1{
     font-size: 90px;
   }
@@ -156,7 +156,7 @@ h3{
 .about-col:hover{
   box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
-@media(max-width: 480px){
+@media(max-width: 700px){
   .row{
     flex-direction: column;
   }
@@ -300,7 +300,7 @@ h3{
   background: #f44336;
   transition: 1s;
 }
-@media(max-width: 480px){
+@media(max-width: 700px){
   .ct-info h1{
     font-size: 24px;
   }
@@ -334,7 +334,7 @@ h3{
 .sub-history h1{
   margin-top: 100px;
 }
-@media(max-width: 480px){
+@media(max-width: 700px){
   .sub-history h1{
   font-size: 40px;;
   }
@@ -448,7 +448,7 @@ ul{
   color: #24262b;
   background-color: #ffffff;
 }
-@media(max-width: 480px){
+@media(max-width: 700px){
   .footer-col{
     width: 100%;
     margin-bottom: 30px;
